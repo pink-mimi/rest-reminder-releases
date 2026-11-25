@@ -1,12 +1,12 @@
 # Windows 安装与使用
 
-当前版本：**v0.5.2 试用版**
+当前版本：**v0.5.7 试用版**
 
 适用设备：Windows x64，即使用 64 位 Intel / AMD 处理器的 Windows 电脑
 
 ## 安装
 
-1. 从[版本页面](https://github.com/pink-mimi/rest-reminder-releases/releases/tag/v0.5.2)下载 `RestReminder-0.5.2-x64-Setup.exe`
+1. 从[版本页面](https://github.com/pink-mimi/rest-reminder-releases/releases/tag/v0.5.7)下载 `RestReminder-0.5.7-x64-Setup.exe`
 2. 运行安装包。安装后的首次打开会等待安装器收尾，稍候即可
 3. 在开始菜单搜索 **Rest Reminder**，打开「透口气」
 4. 点击「开始提醒」，开始第一轮工作计时
@@ -17,7 +17,7 @@ GitHub 的 `Source code (zip)`、`Source code (tar.gz)` 是下载仓库的文件
 
 ## 调整提醒
 
-打开「详细设置」后，可以调整工作间隔、休息时长和忙时处理
+在「设置」的「休息节奏」中，可以调整工作间隔、休息时长和忙时处理
 
 这三项修改后需要点击「保存休息规则」，再选择「立即生效」或「下一轮生效」。未保存内容会保留为草稿，不会影响正在运行的规则
 
@@ -36,9 +36,13 @@ GitHub 的 `Source code (zip)`、`Source code (tar.gz)` 是下载仓库的文件
 - 「开始休息」或「立即休息」：打开角落倒计时
 - 「全屏休息」：主动进入全屏，按 Esc 返回角落，剩余时间继续
 - 「提前结束」：结束本次休息并开始下一轮工作计时
-- 「暂停提醒」：可选 30 分钟、1 小时或到当天 18:00；恢复后继续此前的剩余时间
+- 「暂停计时」：可选 30 分钟、1 小时，或点击「自定义…」输入分钟数或用滚轮选择恢复时间。恢复后接着原倒计时走
 
 锁屏或睡眠时不弹提醒。恢复后工作计时开始新一轮，未结束的休息按原截止时间继续
+
+## 工作记录
+
+在「计时」页查看今日累计，点击「记录」查看近 7 天的工作、休息和手动暂停时段。手动暂停单独标为「暂停」，不计入工作或休息时长
 
 ## 启动选项
 
@@ -61,7 +65,7 @@ GitHub 的 `Source code (zip)`、`Source code (tar.gz)` 是下载仓库的文件
 可在 PowerShell 中执行：
 
 ```powershell
-Get-FileHash -LiteralPath '.\RestReminder-0.5.2-x64-Setup.exe' -Algorithm SHA256
+Get-FileHash -LiteralPath '.\RestReminder-0.5.7-x64-Setup.exe' -Algorithm SHA256
 ```
 
 将输出的 Hash 与校验文件比较。校验一致只说明文件内容相同，不代表安装包已经获得发布者签名

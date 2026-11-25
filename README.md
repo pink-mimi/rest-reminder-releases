@@ -2,19 +2,19 @@
 
 给一忙起来就忘了起身的你，一个桌面休息提醒
 
-**Windows x64 · v0.5.2 试用版**
+**Windows x64 · v0.5.7 试用版**
 
 ## 下载
 
-### [下载 Windows 安装包](https://github.com/pink-mimi/rest-reminder-releases/releases/download/v0.5.2/RestReminder-0.5.2-x64-Setup.exe)
+### [下载 Windows 安装包（约 151 MB）](https://github.com/pink-mimi/rest-reminder-releases/releases/download/v0.5.7/RestReminder-0.5.7-x64-Setup.exe)
 
-[本次版本说明与附件](https://github.com/pink-mimi/rest-reminder-releases/releases/tag/v0.5.2) · [安装说明](INSTALL.md) · [反馈问题](https://github.com/pink-mimi/rest-reminder-releases/issues/new/choose)
+[本次版本说明与附件](https://github.com/pink-mimi/rest-reminder-releases/releases/tag/v0.5.7) · [安装说明](INSTALL.md) · [反馈问题](https://github.com/pink-mimi/rest-reminder-releases/issues/new/choose)
 
 适用于 64 位 Intel / AMD Windows 电脑。macOS 版还在准备，本次不提供 Mac 安装包
 
 试用包尚未正式签名，Windows 可能提示未知发布者或拦截。请从本仓库的 Release 附件下载，文件校验值见 [SHA256SUMS.txt](SHA256SUMS.txt)。如不确定来源，请先停止安装，无需关闭系统保护
 
-![透口气 v0.5.2 主界面](assets/dashboard.png)
+![透口气 v0.5.7 主界面和今日记录](assets/dashboard-v0.5.7.png)
 
 ## 它怎么提醒你
 
@@ -31,11 +31,14 @@
 ## 可以按自己的习惯设置
 
 - 工作间隔、休息时长，以及忙时未处理提醒的方式
-- 暂停 30 分钟、1 小时或到当天 18:00，随时提前恢复
+- 暂停 30 分钟、1 小时，或自定义时长和恢复时间。恢复后接着原倒计时走
+- 查看今日工作与休息计时、近 7 天趋势及每天的时段。暂停会单独标记
 - 桌角小伙伴和桌角小宇宙，两套主题共六个场景
 - 明亮、暗黑或跟随系统外观，支持减少动态效果
 - 可选开机启动，与启动后自动开始计时分别设置
 - 本机保存设置，未保存的休息规则以草稿保留
+
+![自定义暂停时间滚轮](assets/custom-pause-v0.5.7.png)
 
 ## 开始使用
 
@@ -43,7 +46,7 @@
 2. 安装后在开始菜单搜索 **Rest Reminder**
 3. 打开软件，点击「开始提醒」
 
-默认不会一打开就开始计时，可在详细设置里开启「启动时自动开始」
+默认不会一打开就开始计时，可在「设置」的「启动」中开启「启动时自动开始」
 
 ## 试用说明
 
