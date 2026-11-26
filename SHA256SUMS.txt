@@ -1,3 +1,4 @@
+4660cafd678dad6c70b6c56ae30c45a95de7b0bd04c531be17dfb1fbbac7d986  RestReminder-0.6.7-Windows-x64.zip
 306e9ae84754b777bf5c15de8db1bda4114075f8a3b948134ad8e680c1c1f538  RestReminder-0.6.7-Native-x64.zip
 5c8e8b7b6e9d7328b7d7e9b1c9670b0f8af0828227da02faa19e2f43b5c9b42c  RestReminder-0.5.7-x64-Setup.exe
 c108d48f4e7446c033225e25ea142c7770b353cd6a3180a8a0b3c013cf362b25  RestReminder-0.5.2-x64-Setup.exe

@@ -7,10 +7,10 @@
 
 ## 下载和使用
 
-下载附件 **RestReminder-0.6.7-Native-x64.zip**，约 **27.6 MB**，适用于 64 位 Intel / AMD Windows 电脑。先从托盘退出旧版，完整解压后打开 `RestReminderNativeLauncher.exe`，点击「开始提醒」。
+[下载 Windows x64 便携包（约 27.6 MB）](https://github.com/pink-mimi/rest-reminder-releases/releases/download/v0.6.7/RestReminder-0.6.7-Windows-x64.zip)，适用于 64 位 Intel / AMD Windows 电脑。先从托盘退出旧版，完整解压后打开「透口气」文件夹中的 `透口气.exe`，点击「开始提醒」。
 
-原生版使用独立的本机设置和记录。附件 `SHA256SUMS.txt` 可用于校验 ZIP。
+原生版使用独立的本机设置和记录。附件 `SHA256SUMS-Windows-x64.txt` 可用于校验 ZIP。
 
 技术栈采用 NSH 0.7.1、TypeScript / TSX 和 QuickJS。Windows 后端通过 Win32 绘制，C# / .NET Framework 助手处理开机启动与系统事件。
 
-[使用说明](https://github.com/pink-mimi/rest-reminder-releases/blob/v0.6.7/INSTALL.md) · [问题反馈](https://github.com/pink-mimi/rest-reminder-releases/issues/new/choose)
+[使用说明](https://github.com/pink-mimi/rest-reminder-releases/blob/main/INSTALL.md) · [问题反馈](https://github.com/pink-mimi/rest-reminder-releases/issues/new/choose)

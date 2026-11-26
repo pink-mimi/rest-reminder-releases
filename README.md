@@ -6,7 +6,7 @@
 
 ## 下载
 
-### [下载 Windows 便携版（约 27.6 MB）](https://github.com/pink-mimi/rest-reminder-releases/releases/download/v0.6.7/RestReminder-0.6.7-Native-x64.zip)
+### [下载 Windows 便携版（约 27.6 MB）](https://github.com/pink-mimi/rest-reminder-releases/releases/download/v0.6.7/RestReminder-0.6.7-Windows-x64.zip)
 
 [本次版本说明与附件](https://github.com/pink-mimi/rest-reminder-releases/releases/tag/v0.6.7) · [使用说明](INSTALL.md) · [反馈问题](https://github.com/pink-mimi/rest-reminder-releases/issues/new/choose)
 
@@ -42,8 +42,8 @@
 
 ## 开始使用
 
-1. 下载 `RestReminder-0.6.7-Native-x64.zip` 并完整解压。
-2. 打开解压目录中的 `RestReminderNativeLauncher.exe`。
+1. 下载 `RestReminder-0.6.7-Windows-x64.zip` 并完整解压。
+2. 打开「透口气」文件夹中的 `透口气.exe`。
 3. 点击「开始提醒」，开始第一轮工作计时。
 
 默认不会一打开就开始计时，可在「设置」的「启动」中开启「启动时自动开始」

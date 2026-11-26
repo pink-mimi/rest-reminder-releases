@@ -6,11 +6,11 @@
 
 ## 打开便携版
 
-1. 从[版本页面](https://github.com/pink-mimi/rest-reminder-releases/releases/tag/v0.6.7)下载 `RestReminder-0.6.7-Native-x64.zip`，约 27.6 MB。
-2. 完整解压到一个文件夹，保留启动器和 `runtime` 目录的相对位置。
-3. 打开 `RestReminderNativeLauncher.exe`，点击「开始提醒」。
+1. 从[版本页面](https://github.com/pink-mimi/rest-reminder-releases/releases/tag/v0.6.7)下载 `RestReminder-0.6.7-Windows-x64.zip`，约 27.6 MB。
+2. 完整解压，保留「透口气」文件夹和其中的 `runtime`。
+3. 打开「透口气」文件夹中的 `透口气.exe`，点击「开始提醒」。
 
-请在 Release 的附件区选择带 `Native-x64` 字样的 ZIP。
+请在 Release 的附件区选择带 `Windows-x64` 字样的 ZIP。
 
 当前试用包尚未正式签名，Windows 可能显示未知发布者或拦截。如果不确定来源，请停止安装，不建议关闭系统保护。下载页提供 SHA-256 校验值用于确认文件是否一致
 
@@ -64,7 +64,7 @@
 可在 PowerShell 中执行：
 
 ```powershell
-Get-FileHash -LiteralPath '.\RestReminder-0.6.7-Native-x64.zip' -Algorithm SHA256
+Get-FileHash -LiteralPath '.\RestReminder-0.6.7-Windows-x64.zip' -Algorithm SHA256
 ```
 
 将输出的 Hash 与校验文件中的同名条目比较，确认文件内容一致。
