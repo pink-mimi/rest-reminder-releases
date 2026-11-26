@@ -2,19 +2,19 @@
 
 给一忙起来就忘了起身的你，一个桌面休息提醒
 
-**Windows x64 · v0.5.7 试用版**
+**Windows x64 · v0.6.7 原生试用版**
 
 ## 下载
 
-### [下载 Windows 安装包（约 151 MB）](https://github.com/pink-mimi/rest-reminder-releases/releases/download/v0.5.7/RestReminder-0.5.7-x64-Setup.exe)
+### [下载 Windows 便携版（约 27.6 MB）](https://github.com/pink-mimi/rest-reminder-releases/releases/download/v0.6.7/RestReminder-0.6.7-Native-x64.zip)
 
-[本次版本说明与附件](https://github.com/pink-mimi/rest-reminder-releases/releases/tag/v0.5.7) · [安装说明](INSTALL.md) · [反馈问题](https://github.com/pink-mimi/rest-reminder-releases/issues/new/choose)
+[本次版本说明与附件](https://github.com/pink-mimi/rest-reminder-releases/releases/tag/v0.6.7) · [使用说明](INSTALL.md) · [反馈问题](https://github.com/pink-mimi/rest-reminder-releases/issues/new/choose)
 
-适用于 64 位 Intel / AMD Windows 电脑。macOS 版还在准备，本次不提供 Mac 安装包
+适用于 64 位 Intel / AMD Windows 电脑，解压后约 71.5 MB。
 
-试用包尚未正式签名，Windows 可能提示未知发布者或拦截。请从本仓库的 Release 附件下载，文件校验值见 [SHA256SUMS.txt](SHA256SUMS.txt)。如不确定来源，请先停止安装，无需关闭系统保护
+试用包尚未正式签名，Windows 可能提示未知发布者或拦截。请从本仓库的 Release 附件下载，文件校验值见 [SHA256SUMS.txt](SHA256SUMS.txt)。
 
-![透口气 v0.5.7 主界面和今日记录](assets/dashboard-v0.5.7.png)
+![透口气 v0.6.7 主界面和今日记录](assets/dashboard-v0.6.7.png)
 
 ## 它怎么提醒你
 
@@ -22,7 +22,7 @@
 
 到点后，屏幕一角出现一张静音卡片，键盘输入继续留在正在工作的窗口。你可以开始休息、5 分钟后再提醒，或者跳过本次
 
-![角落提醒](assets/reminder.png)
+![角落提醒](assets/reminder-v0.6.7.png)
 
 休息结束会轻提示一次，并自动开始下一轮。关闭设置窗口后仍在后台运行；从托盘可以查看剩余时间、开始休息、暂停或退出
 
@@ -38,15 +38,19 @@
 - 可选开机启动，与启动后自动开始计时分别设置
 - 本机保存设置，未保存的休息规则以草稿保留
 
-![自定义暂停时间滚轮](assets/custom-pause-v0.5.7.png)
+![自定义暂停时间滚轮](assets/custom-pause-v0.6.7.png)
 
 ## 开始使用
 
-1. 下载上方的 `.exe` 安装包，不要下载 GitHub 自动生成的 Source code 压缩包
-2. 安装后在开始菜单搜索 **Rest Reminder**
-3. 打开软件，点击「开始提醒」
+1. 下载 `RestReminder-0.6.7-Native-x64.zip` 并完整解压。
+2. 打开解压目录中的 `RestReminderNativeLauncher.exe`。
+3. 点击「开始提醒」，开始第一轮工作计时。
 
 默认不会一打开就开始计时，可在「设置」的「启动」中开启「启动时自动开始」
+
+## 技术栈
+
+界面使用 NSH 0.7.1 和 TypeScript / TSX，运行在 QuickJS 上。Windows 端通过 Win32 原生渲染，由 C# / .NET Framework 助手处理开机启动、锁屏和睡眠唤醒。
 
 ## 试用说明
 
@@ -54,6 +58,6 @@
 - 不检测坐姿，不判断你是否真的坐着，也不识别会议或录屏；需要安静时可手动暂停
 - 无需注册，应用功能不依赖网络，设置保存在本机
 - 当前没有应用内自动更新，新版会发布在[版本列表](https://github.com/pink-mimi/rest-reminder-releases/releases)
-- 本仓库用于安装包下载、说明和问题反馈，源码暂时保持私有
+- 本仓库用于发布便携包、使用说明和问题反馈，源码仓库为私有
 
 [查看隐私说明](PRIVACY.md) · [查看更新记录](CHANGELOG.md) · [如何反馈](FEEDBACK.md)

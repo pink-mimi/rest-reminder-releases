@@ -1,17 +1,16 @@
-# Windows 安装与使用
+# Windows 下载与使用
 
-当前版本：**v0.5.7 试用版**
+当前版本：**v0.6.7 原生试用版**
 
 适用设备：Windows x64，即使用 64 位 Intel / AMD 处理器的 Windows 电脑
 
-## 安装
+## 打开便携版
 
-1. 从[版本页面](https://github.com/pink-mimi/rest-reminder-releases/releases/tag/v0.5.7)下载 `RestReminder-0.5.7-x64-Setup.exe`
-2. 运行安装包。安装后的首次打开会等待安装器收尾，稍候即可
-3. 在开始菜单搜索 **Rest Reminder**，打开「透口气」
-4. 点击「开始提醒」，开始第一轮工作计时
+1. 从[版本页面](https://github.com/pink-mimi/rest-reminder-releases/releases/tag/v0.6.7)下载 `RestReminder-0.6.7-Native-x64.zip`，约 27.6 MB。
+2. 完整解压到一个文件夹，保留启动器和 `runtime` 目录的相对位置。
+3. 打开 `RestReminderNativeLauncher.exe`，点击「开始提醒」。
 
-GitHub 的 `Source code (zip)`、`Source code (tar.gz)` 是下载仓库的文件快照，不是软件安装包
+请在 Release 的附件区选择带 `Native-x64` 字样的 ZIP。
 
 当前试用包尚未正式签名，Windows 可能显示未知发布者或拦截。如果不确定来源，请停止安装，不建议关闭系统保护。下载页提供 SHA-256 校验值用于确认文件是否一致
 
@@ -52,11 +51,11 @@ GitHub 的 `Source code (zip)`、`Source code (tar.gz)` 是下载仓库的文件
 
 ## 升级与卸载
 
-升级前先从托盘退出旧版，再运行新版安装包。请保留现有配置，并在升级后检查设置；遇到异常可提交[问题反馈](https://github.com/pink-mimi/rest-reminder-releases/issues/new/choose)
+升级前先从托盘退出旧版，再解压并运行新版本。旧 Electron 版和原生版分别保存设置和工作记录，首次切换到原生版时请按需要调整设置。遇到异常可提交[问题反馈](https://github.com/pink-mimi/rest-reminder-releases/issues/new/choose)。
 
 当前没有应用内自动更新，可从[版本列表](https://github.com/pink-mimi/rest-reminder-releases/releases)查看新版
 
-卸载时先退出软件，再在 Windows 设置的应用列表中卸载 **Rest Reminder**
+停用便携版时，如果开启了「开机启动」，先在设置里关闭，再从托盘退出。便携版的程序文件位于解压目录。
 
 ## 校验文件
 
@@ -65,7 +64,7 @@ GitHub 的 `Source code (zip)`、`Source code (tar.gz)` 是下载仓库的文件
 可在 PowerShell 中执行：
 
 ```powershell
-Get-FileHash -LiteralPath '.\RestReminder-0.5.7-x64-Setup.exe' -Algorithm SHA256
+Get-FileHash -LiteralPath '.\RestReminder-0.6.7-Native-x64.zip' -Algorithm SHA256
 ```
 
-将输出的 Hash 与校验文件比较。校验一致只说明文件内容相同，不代表安装包已经获得发布者签名
+将输出的 Hash 与校验文件中的同名条目比较，确认文件内容一致。
