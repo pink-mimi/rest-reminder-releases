@@ -14,7 +14,7 @@
 
 ## Apple 芯片 Mac 预览版
 
-1. 下载 `RestReminder-0.6.8-macOS-arm64.zip`，传到 Apple 芯片 Mac 并解压。
+1. 下载 `RestReminder-0.6.8-macOS-arm64-Rev2.zip`，传到 Apple 芯片 Mac 并解压。
 2. 打开「透口气」文件夹中的 `透口气.app`，点击「开始提醒」。
 3. 从顶部菜单栏进入快捷功能，或在应用菜单选择「设置」。
 
@@ -65,7 +65,7 @@ Windows 锁屏或睡眠时暂停提醒。恢复后工作计时开始新一轮，
 
 ## 校验文件
 
-各下载包的校验值位于 [SHA256SUMS.txt](SHA256SUMS.txt)。Windows 修订包的校验值也随 Release 附件 `SHA256SUMS-Windows-Rev2.txt` 提供。
+各下载包的校验值位于 [SHA256SUMS.txt](SHA256SUMS.txt)。Windows 和 Mac 修订包的校验值也随 Release 附件提供。
 
 可在 PowerShell 中执行：
 
@@ -73,6 +73,6 @@ Windows 锁屏或睡眠时暂停提醒。恢复后工作计时开始新一轮，
 Get-FileHash -LiteralPath '.\RestReminder-0.6.8-Windows-x64-Rev2.zip' -Algorithm SHA256
 ```
 
-在 macOS 终端中，可以运行 `shasum -a 256 RestReminder-0.6.8-macOS-arm64.zip`。
+在 macOS 终端中，可以运行 `shasum -a 256 RestReminder-0.6.8-macOS-arm64-Rev2.zip`。
 
 将输出的 Hash 与校验文件中的同名条目比较，确认文件内容一致。

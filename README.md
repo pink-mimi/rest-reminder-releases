@@ -10,7 +10,7 @@
 
 适用于 64 位 Intel / AMD Windows 电脑。完整解压后，打开「透口气」文件夹中的 `透口气.exe`。试用包尚未正式签名，Windows 可能显示未知发布者提示。
 
-### [下载 Apple 芯片 Mac 预览版](https://github.com/pink-mimi/rest-reminder-releases/releases/download/v0.6.8/RestReminder-0.6.8-macOS-arm64.zip)
+### [下载 Apple 芯片 Mac 修订预览包](https://github.com/pink-mimi/rest-reminder-releases/releases/download/v0.6.8/RestReminder-0.6.8-macOS-arm64-Rev2.zip)
 
 适用于 Apple 芯片 Mac。解压后打开 `透口气.app`。预览包使用临时签名，尚未经过 Apple 公证，macOS 可能拦截首次打开。
 
