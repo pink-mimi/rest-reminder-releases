@@ -1,18 +1,24 @@
-# Windows 下载与使用
+# 透口气下载与使用
 
-当前版本：**v0.6.7 原生试用版**
+当前版本为 **v0.6.8**。两个系统的文件都在[版本页面](https://github.com/pink-mimi/rest-reminder-releases/releases/tag/v0.6.8)。
 
-适用设备：Windows x64，即使用 64 位 Intel / AMD 处理器的 Windows 电脑
+## Windows x64 便携版
 
-## 打开便携版
+使用 64 位 Intel / AMD 处理器的 Windows 电脑可以运行此版本。
 
-1. 从[版本页面](https://github.com/pink-mimi/rest-reminder-releases/releases/tag/v0.6.7)下载 `RestReminder-0.6.7-Windows-x64.zip`，约 27.6 MB。
+1. 下载 `RestReminder-0.6.8-Windows-x64.zip`。
 2. 完整解压，保留「透口气」文件夹和其中的 `runtime`。
 3. 打开「透口气」文件夹中的 `透口气.exe`，点击「开始提醒」。
 
-请在 Release 的附件区选择带 `Windows-x64` 字样的 ZIP。
+当前试用包尚未正式签名，Windows 可能显示未知发布者或拦截。请从本仓库下载并核对 SHA-256。
 
-当前试用包尚未正式签名，Windows 可能显示未知发布者或拦截。如果不确定来源，请停止安装，不建议关闭系统保护。下载页提供 SHA-256 校验值用于确认文件是否一致
+## Apple 芯片 Mac 预览版
+
+1. 下载 `RestReminder-0.6.8-macOS-arm64.zip`，传到 Apple 芯片 Mac 并解压。
+2. 打开「透口气」文件夹中的 `透口气.app`，点击「开始提醒」。
+3. 从顶部菜单栏进入快捷功能，或在应用菜单选择「设置」。
+
+预览包使用临时签名，尚未经过 Apple 公证，macOS 可能拦截第一次打开。AppKit 上的设置和计时通过了自动化测试。锁屏唤醒、登录时打开和多显示器提醒仍需实际使用验证。
 
 ## 调整提醒
 
@@ -24,7 +30,7 @@
 
 ## 关闭窗口与退出
 
-关闭设置窗口后，软件继续在托盘运行。Windows 托盘图标可能位于任务栏的隐藏图标区域
+关闭设置窗口后，软件继续在后台运行。Windows 托盘图标可能位于任务栏的隐藏图标区域。Mac 的快捷入口在顶部菜单栏。
 
 - 点击托盘图标：打开快捷面板
 - 右键托盘图标：打开菜单
@@ -37,7 +43,7 @@
 - 「提前结束」：结束本次休息并开始下一轮工作计时
 - 「暂停计时」：可选 30 分钟、1 小时，或点击「自定义…」输入分钟数或用滚轮选择恢复时间。恢复后接着原倒计时走
 
-锁屏或睡眠时不弹提醒。恢复后工作计时开始新一轮，未结束的休息按原截止时间继续
+Windows 锁屏或睡眠时暂停提醒。恢复后工作计时开始新一轮，未结束的休息按原截止时间继续。
 
 ## 工作记录
 
@@ -51,7 +57,7 @@
 
 ## 升级与卸载
 
-升级前先从托盘退出旧版，再解压并运行新版本。旧 Electron 版和原生版分别保存设置和工作记录，首次切换到原生版时请按需要调整设置。遇到异常可提交[问题反馈](https://github.com/pink-mimi/rest-reminder-releases/issues/new/choose)。
+升级前先退出旧版，再解压并运行新版本。旧 Electron 版和原生版分别保存设置和工作记录，首次切换到原生版时请按需要调整设置。遇到异常可提交[问题反馈](https://github.com/pink-mimi/rest-reminder-releases/issues/new/choose)。
 
 当前没有应用内自动更新，可从[版本列表](https://github.com/pink-mimi/rest-reminder-releases/releases)查看新版
 
@@ -64,7 +70,9 @@
 可在 PowerShell 中执行：
 
 ```powershell
-Get-FileHash -LiteralPath '.\RestReminder-0.6.7-Windows-x64.zip' -Algorithm SHA256
+Get-FileHash -LiteralPath '.\RestReminder-0.6.8-Windows-x64.zip' -Algorithm SHA256
 ```
+
+在 macOS 终端中，可以运行 `shasum -a 256 RestReminder-0.6.8-macOS-arm64.zip`。
 
 将输出的 Hash 与校验文件中的同名条目比较，确认文件内容一致。

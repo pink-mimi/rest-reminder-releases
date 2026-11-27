@@ -2,17 +2,19 @@
 
 给一忙起来就忘了起身的你，一个桌面休息提醒
 
-**Windows x64 · v0.6.7 原生试用版**
+**v0.6.8 · Windows x64 试用版 · Apple 芯片 Mac 预览版**
 
 ## 下载
 
-### [下载 Windows 便携版（约 27.6 MB）](https://github.com/pink-mimi/rest-reminder-releases/releases/download/v0.6.7/RestReminder-0.6.7-Windows-x64.zip)
+### [下载 Windows x64 便携版](https://github.com/pink-mimi/rest-reminder-releases/releases/download/v0.6.8/RestReminder-0.6.8-Windows-x64.zip)
 
-[本次版本说明与附件](https://github.com/pink-mimi/rest-reminder-releases/releases/tag/v0.6.7) · [使用说明](INSTALL.md) · [反馈问题](https://github.com/pink-mimi/rest-reminder-releases/issues/new/choose)
+适用于 64 位 Intel / AMD Windows 电脑。完整解压后，打开「透口气」文件夹中的 `透口气.exe`。试用包尚未正式签名，Windows 可能显示未知发布者提示。
 
-适用于 64 位 Intel / AMD Windows 电脑，解压后约 71.5 MB。
+### [下载 Apple 芯片 Mac 预览版](https://github.com/pink-mimi/rest-reminder-releases/releases/download/v0.6.8/RestReminder-0.6.8-macOS-arm64.zip)
 
-试用包尚未正式签名，Windows 可能提示未知发布者或拦截。请从本仓库的 Release 附件下载，文件校验值见 [SHA256SUMS.txt](SHA256SUMS.txt)。
+适用于 Apple 芯片 Mac。解压后打开 `透口气.app`。预览包使用临时签名，尚未经过 Apple 公证，macOS 可能拦截首次打开。
+
+[版本说明与附件](https://github.com/pink-mimi/rest-reminder-releases/releases/tag/v0.6.8) · [使用说明](INSTALL.md) · [校验值](SHA256SUMS.txt) · [反馈问题](https://github.com/pink-mimi/rest-reminder-releases/issues/new/choose)
 
 ![透口气 v0.6.7 主界面和今日记录](assets/dashboard-v0.6.7.png)
 
@@ -24,7 +26,7 @@
 
 ![角落提醒](assets/reminder-v0.6.7.png)
 
-休息结束会轻提示一次，并自动开始下一轮。关闭设置窗口后仍在后台运行；从托盘可以查看剩余时间、开始休息、暂停或退出
+休息结束会轻提示一次，并自动开始下一轮。关闭设置窗口后仍在后台运行。Windows 从系统托盘操作，Mac 从顶部菜单栏操作。
 
 想休息得完整一点，可以主动进入全屏休息，按 Esc 返回角落后倒计时继续。到点提醒默认不会进入全屏
 
@@ -42,15 +44,15 @@
 
 ## 开始使用
 
-1. 下载 `RestReminder-0.6.7-Windows-x64.zip` 并完整解压。
-2. 打开「透口气」文件夹中的 `透口气.exe`。
+1. 下载对应系统的 ZIP 并完整解压。
+2. 从「透口气」文件夹打开 Windows 的 `透口气.exe` 或 Mac 的 `透口气.app`。
 3. 点击「开始提醒」，开始第一轮工作计时。
 
 默认不会一打开就开始计时，可在「设置」的「启动」中开启「启动时自动开始」
 
 ## 技术栈
 
-界面使用 NSH 0.7.1 和 TypeScript / TSX，运行在 QuickJS 上。Windows 端通过 Win32 原生渲染，由 C# / .NET Framework 助手处理开机启动、锁屏和睡眠唤醒。
+界面使用 NSH 0.7.1 和 TypeScript / TSX，运行在 QuickJS 上。Windows 端使用 Win32 和 C# 系统助手，macOS 端使用 AppKit 和原生菜单栏。
 
 ## 试用说明
 
