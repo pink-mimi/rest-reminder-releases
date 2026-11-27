@@ -2,11 +2,11 @@
 
 给一忙起来就忘了起身的你，一个桌面休息提醒
 
-**v0.6.8 · Windows x64 试用版 · Apple 芯片 Mac 预览版**
+**v0.6.8 · Windows x64 修订版 · Apple 芯片 Mac 预览版**
 
 ## 下载
 
-### [下载 Windows x64 便携版](https://github.com/pink-mimi/rest-reminder-releases/releases/download/v0.6.8/RestReminder-0.6.8-Windows-x64.zip)
+### [下载 Windows x64 便携修订版](https://github.com/pink-mimi/rest-reminder-releases/releases/download/v0.6.8/RestReminder-0.6.8-Windows-x64-Rev2.zip)
 
 适用于 64 位 Intel / AMD Windows 电脑。完整解压后，打开「透口气」文件夹中的 `透口气.exe`。试用包尚未正式签名，Windows 可能显示未知发布者提示。
 

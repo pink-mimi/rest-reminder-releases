@@ -6,7 +6,7 @@
 
 使用 64 位 Intel / AMD 处理器的 Windows 电脑可以运行此版本。
 
-1. 下载 `RestReminder-0.6.8-Windows-x64.zip`。
+1. 下载 `RestReminder-0.6.8-Windows-x64-Rev2.zip`。
 2. 完整解压，保留「透口气」文件夹和其中的 `runtime`。
 3. 打开「透口气」文件夹中的 `透口气.exe`，点击「开始提醒」。
 
@@ -65,12 +65,12 @@ Windows 锁屏或睡眠时暂停提醒。恢复后工作计时开始新一轮，
 
 ## 校验文件
 
-本版本的校验值位于 [SHA256SUMS.txt](SHA256SUMS.txt)，也会随 Release 附件提供
+各下载包的校验值位于 [SHA256SUMS.txt](SHA256SUMS.txt)。Windows 修订包的校验值也随 Release 附件 `SHA256SUMS-Windows-Rev2.txt` 提供。
 
 可在 PowerShell 中执行：
 
 ```powershell
-Get-FileHash -LiteralPath '.\RestReminder-0.6.8-Windows-x64.zip' -Algorithm SHA256
+Get-FileHash -LiteralPath '.\RestReminder-0.6.8-Windows-x64-Rev2.zip' -Algorithm SHA256
 ```
 
 在 macOS 终端中，可以运行 `shasum -a 256 RestReminder-0.6.8-macOS-arm64.zip`。

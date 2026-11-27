@@ -1,2 +1,3 @@
+6252de15a83b5a9b04a654184bb65e99b4a6b6f00903a27cab285816cea578d4  RestReminder-0.6.8-Windows-x64-Rev2.zip
 420f41efe5aee28ee6b55b1542e0bf1f7aa3e9b875377c3127e19a80521a00c2  RestReminder-0.6.8-Windows-x64.zip
 a6b833ce7d02c1b504b06caf3303622f7a5aa1e40496f07f00ec40f423f58971  RestReminder-0.6.8-macOS-arm64.zip
